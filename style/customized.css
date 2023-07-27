@@ -52,7 +52,7 @@ a {
 .header-container {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/1.jpg");
+  background-image: url("https://tripfinder-hotel.vercel.app/images/banner/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
