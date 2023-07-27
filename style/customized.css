@@ -480,7 +480,7 @@ a {
 
 footer {
   height: 15rem;
-  background-image: url("/assets/footer-bg.71b59c6ca51ec804e5764202fa155ef8.svg");
+  background-image: url("https://tripfinder-hotel.vercel.app/static/media/footer-bg.71b59c6ca51ec804e5764202fa155ef8.svg");
   width: 100%;
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
