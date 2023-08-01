@@ -81,6 +81,7 @@ a {
   margin: 0;
   padding-right: 10px;
   padding-left: 10px;
+  padding-bottom: 15px;
   box-shadow: 15px 0px 20px 0px var(--clr-Transparent-Soft-violet);
   background-color: var(--white);
   z-index: 3;
@@ -474,16 +475,21 @@ a {
 }
 
 footer {
-  height: 15rem;
+  height: 15rem;  
   background-image: url("https://tripfinder-hotel.vercel.app/static/media/footer-bg.71b59c6ca51ec804e5764202fa155ef8.svg");
   width: 100%;
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.footer .footer-container {
+.footer .footer-container-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,7 +499,6 @@ footer {
 }
 
 .footer .copy {
-  margin-left: 37rem;
   margin-top: 2rem;
   font-weight: 400;
   color: gray;
