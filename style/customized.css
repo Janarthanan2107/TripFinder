@@ -43,10 +43,15 @@ body {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header-container {
@@ -76,7 +81,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 70px;
   color: var(--CyanGreen);
   margin: 0;
   padding-right: 10px;
@@ -126,6 +131,15 @@ a {
   border-radius: 4px;
 }
 
+.visible .filter {
+  width: 400px;
+  height: 45px;
+  padding: 7px;
+  border: 1px solid rgb(247 247 247);
+  border-radius: 4px;
+  background-color: rgb(247 247 247);
+}
+
 .filter:focus {
   outline: none;
   box-shadow: none;
@@ -154,8 +168,16 @@ a {
   font-size: 1rem;
 }
 
+.visible .menu-container .list-items .list {
+  color: black;
+}
+
 .menu-container .list-items li:nth-child(1) {
   font-weight: 900;
+}
+
+.visible .menu-container .list-items li:nth-child(1) {
+  color: var(--CyanGreen);
 }
 
 .sign-container {
@@ -163,6 +185,10 @@ a {
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
+}
+
+.sign-container p {
+  cursor: pointer;
 }
 
 .sign-container .signup-btn {
@@ -311,6 +337,11 @@ a {
   padding: 5rem 2rem 2rem 2rem;
 }
 
+.showAll:hover {
+  cursor: pointer;
+  color: var(--CyanGreen);
+}
+
 .section-1 {
   margin-bottom: 3rem;
 }
@@ -319,14 +350,15 @@ a {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .img-carosel {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 10px;
+  width: 15.5rem;
+  height: 18rem;
+  border-radius: 7px;
   position: relative;
+  cursor: pointer;
 }
 
 .img-carosel img {
@@ -336,7 +368,7 @@ a {
   position: absolute;
   left: 0px;
   top: 0px;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .img-carosel .details {
@@ -436,6 +468,7 @@ a {
 
 .rating p {
   margin-left: 5px;
+  font-weight: 700;
 }
 
 .heart-container {
@@ -453,6 +486,7 @@ a {
 }
 
 /* footer */
+
 .footer .title {
   display: flex;
   align-items: center;
@@ -475,7 +509,7 @@ a {
 }
 
 footer {
-  height: 15rem;  
+  height: 15rem;
   background-image: url("https://tripfinder-hotel.vercel.app/static/media/footer-bg.71b59c6ca51ec804e5764202fa155ef8.svg");
   width: 100%;
   background-color: rgb(255, 255, 255);
